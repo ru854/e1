@@ -1,0 +1,22 @@
+1.	Open Eclipse and create a Maven project named SensorDataProcessor with Group Id com.sensordata and packaging jar.
+2.	Open Chrome, go to Maven Central, and copy the latest OpenCSV dependency XML.
+3.	Paste the OpenCSV dependency into pom.xml, add JUnit 5 and the Surefire plugin, set Java release to 17, then run Maven Update Project.
+4.	Open Atom and add a folder witch contain the folder of input files desktop/e1 then fetch sensor_data.csv with 100 rows  and copy it to folder of eclipse project  C:\Users\Random\eclipse-workspace\SensorDataProcessor\src\main\resources
+6.	in eclipse folder   Create SensorReading.java with fields timestamp, sensorId, temperature, humidity, and pressure, plus a constructor and getters.
+7.	Create CsvProcessor.java with readCsv, filterHighTemp, averageHumidityPerSensor, countPerSensor, and writeSummary methods.
+8.	Create SensorProcessor.java with a main method that runs the full pipeline: read → filter → aggregate → write summary_report.csv.
+9.	Create test_sensor_data.csv with 5 rows in src/test/resources/.
+10.	Create CsvProcessorTest.java with 3 JUnit tests for filtering, averaging, and counting.
+11.	run the project
+13.	Copy summary_report.csv to p1/.
+14.	Copy the Surefire report into p1/test_results.txt.
+15.	Open Atom and add the SensorDataProcessor project folder as a project.
+16.	Open Atom's Git panel and initialize a repository if not already done.
+17.	Stage all files in Atom's Git panel.
+18.	Write a commit message: "Add sensor processor pipeline with tests and summary report".
+19.	Commit the changes from Atom.
+20.	Add the remote repository URL in Atom's Git panel.
+21.	Push the commit to GitHub from Atom.
+22.	Verify the push succeeded — Atom's Git panel shows "up to date".
+23.	Confirm all deliverables exist in p1/: sensor_data.csv, test_sensor_data.csv, summary_report.csv, test_results.txt, pom.xml, and the 4 Java classes.
+24.	Report the final file list and Git status.
